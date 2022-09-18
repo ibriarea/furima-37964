@@ -1,5 +1,5 @@
 {
-  "name": "furima-37964",
+  "name": "furima_37964",
   "private": true,
   "dependencies": {
     "@rails/actioncable": "^6.0.0-alpha",
@@ -12,7 +12,7 @@
   "devDependencies": {
     "webpack-dev-server": "^4.11.0"
   }, 
- "engines" : {
-   "node": "14.19.1" 
+  "engines" : {
+    "node": "14.19.1" 
   }
 }
