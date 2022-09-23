@@ -5,8 +5,8 @@
 | Column             | Type   | Options                   | 
 | ------------------ | ------ | ------------------------- |
 | email              | string | null: false, unique: true |
-| encrypted_password | string | null: false,              |
-| nickname           | string | null: false,              |
+| encrypted_password | string | null: false               |
+| nickname           | string | null: false               |
 | first_name         | string | null: false               |
 | last_name          | string | null: false               |
 | read_first         | string | null: false               |
@@ -26,12 +26,12 @@
 | -----------------  | ---------- | ------------------------------ |
 | name               | string     | null: false                    |
 | explanation        | text       | null: false                    |
-| category_id        | integer    | null: false,                   |
-| condition_id       | integer    | null: false,                   |
-| delivery_charge_id | integer    | null: false,                   |
-| prefecture_id      | integer    | null: false,                   |
-| arrival_day_id     | integer    | null: false,                   |
-| price              | integer    | null: false,                   |
+| category_id        | integer    | null: false                    |
+| condition_id       | integer    | null: false                    |
+| delivery_charge_id | integer    | null: false                    |
+| prefecture_id      | integer    | null: false                    |
+| arrival_day_id     | integer    | null: false                    |
+| price              | integer    | null: false                    |
 | user               | references | null: false, foreign_key: true |
 
 
@@ -41,9 +41,9 @@
 - has_one :order
 - belongs_to_active_hash :category
 - belongs_to_active_hash :condition
-- belongs_to_active_hash :delivery_charges
-- belongs_to_active_hash :prefectures 
-- belongs_to_active_hash :arrival_days
+- belongs_to_active_hash :delivery_charge
+- belongs_to_active_hash :prefecture 
+- belongs_to_active_hash :arrival_day
 
 
 
@@ -57,7 +57,6 @@
 
 ### Association
 
-- has_one_active_hash :prefectures
 - has_one :payment
 - belongs_to :user
 - belongs_to :item
