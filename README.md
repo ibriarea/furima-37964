@@ -37,12 +37,6 @@
 
 ### Association
 
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-* ...
-=======
-=======
->>>>>>> 7fb8a5cfe1f15168afeaf604a4aa9e563da5723a
 - belongs_to :user
 - has_one :order
 - belongs_to_active_hash :category
@@ -84,7 +78,4 @@
 ### Association
 
 - belongs_to :order
-<<<<<<< HEAD
->>>>>>> Stashed changes
-=======
->>>>>>> 7fb8a5cfe1f15168afeaf604a4aa9e563da5723a
+
