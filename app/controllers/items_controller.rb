@@ -2,7 +2,7 @@ class ItemsController < ApplicationController
   before_action :authenticate_user!, except: [:index]
   
   def index
-    #@items = Item.all.includes(:user)
+    @items = Item.all.includes(:user).order('created_at DESC')
   end
 
   def new
@@ -25,7 +25,7 @@ class ItemsController < ApplicationController
                                 :arrival_day_id, :price).merge(user_id: current_user.id)
  end
 
- def set_item
-   #@item = Item.find(params[:id])
-  end
+#  def set_item
+#    @item = Item.find(params[:id])
+#   end
 end
