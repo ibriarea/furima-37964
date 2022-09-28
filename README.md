@@ -37,6 +37,23 @@
 
 ### Association
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+* ...
+=======
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+* ...
+=======
+=======
+>>>>>>> 2fc9ab2c4c9c35a0a7b4c9c60c27204c96bf1845
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 - belongs_to :user
 - has_one :order
 - belongs_to_active_hash :category
@@ -78,4 +95,19 @@
 ### Association
 
 - belongs_to :order
+<<<<<<< Updated upstream
 
+=======
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+
+=======
+<<<<<<< HEAD
+>>>>>>> Stashed changes
+=======
+
+>>>>>>> 2fc9ab2c4c9c35a0a7b4c9c60c27204c96bf1845
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes

@@ -59,8 +59,23 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 group :development do
   gem 'rubocop', require: false
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+end
+=======
+>>>>>>> Stashed changes
 end
 
 gem 'devise'
 
+<<<<<<< Updated upstream
 gem 'active_hash'
+=======
+<<<<<<< Updated upstream
+gem 'active_hash'
+=======
+gem 'active_hash'
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
