@@ -1,10 +1,9 @@
 class Item < ApplicationRecord
   extend ActiveHash::Associations::ActiveRecordExtensions
 
-  #テーブルとのアソシエーション
+  # テーブルとのアソシエーション
   belongs_to :user
-  # has_one    :order
-  # has_many :comments
+  has_one    :order
 
   # アクティブハッシュとのアソシエーション
   belongs_to :category
@@ -38,4 +37,4 @@ class Item < ApplicationRecord
     validates :delivery_charge_id
     validates :arrival_day_id
   end
- end
+end
