@@ -41,10 +41,7 @@ class OrdersController < ApplicationController
   end
 
   def set_limits
-    if @item.user_id == current_user.id
-      redirect_to root_path
-    end
-    unless @item.order == nil
+    if @item.user_id == current_user.id || @item.order != nil
       redirect_to root_path
     end
   end
