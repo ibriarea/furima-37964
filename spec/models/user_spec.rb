@@ -69,13 +69,13 @@ RSpec.describe User, type: :model do
         @user.password = '123456'
         @user.password_confirmation = '123456'
         @user.valid?
-        expect(@user.errors.full_messages).to include()
+        expect(@user.errors.full_messages).to include
       end
       it 'パスワード（確認含む）が半角数字でないと保存できない' do
         @user.password = 'yamada'
         @user.password_confirmation = 'yamada'
         @user.valid?
-        expect(@user.errors.full_messages).to include()
+        expect(@user.errors.full_messages).to include
       end
       it 'パスワードはパスワード確認と不一致であれば保存できない' do
         @user.password = '123abc'
